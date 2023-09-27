@@ -1,0 +1,10 @@
+{
+  "baseUrl": "https://www.demoblaze.com/",
+  "ignoreTestFiles": [
+    "**/*.md",
+    "cypress/.prettierrc"
+  ],
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "projectId": "7f2gjh"
+}

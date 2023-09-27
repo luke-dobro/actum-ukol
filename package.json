@@ -1,0 +1,21 @@
+{
+  "name": "actumdigitaltask",
+  "version": "1.0.0",
+  "description": "Task for interview purposes",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:run": "./node_modules/.bin/cypress run"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Lukas Dobrovolny",
+  "license": "Freeware",
+  "devDependencies": {
+    "@types/node": "^14.0.23",
+    "cypress": "^4.11.0",
+    "typescript": "^3.9.6",
+    "update-json-file": "^1.1.1"
+  }
+}
