@@ -140,7 +140,7 @@ describe('Cart tests', () => {
     cy.get('.confirm.btn.btn-lg.btn-primary').click();
   });
 
-  it.only('Products deletion and total recalculation check', () => {
+  it('Products deletion and total recalculation check', () => {
     cy.visit('/');
 
     cy.get('.list-group-item').contains('Monitors').click();
