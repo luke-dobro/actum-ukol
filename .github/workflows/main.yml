@@ -1,4 +1,4 @@
-name: FE and BE tests
+name: End-to-end tests
 on: [push]
 jobs:
   cypress-run:
@@ -8,6 +8,6 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Cypress run
+        uses: cypress-io/github-action@v1
         with:
-          start: npx cypress run --spec "cypress/integration/BE/**/*.js,cypress/integration/FE/**/*.js"
-          record: false  # Do not record videos and screenshots
+          start: npx cypress run
