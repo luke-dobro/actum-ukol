@@ -1,5 +1,6 @@
 {
   "baseUrl": "https://www.demoblaze.com/",
+  "baseUrlApi": "https://restful-booker.herokuapp.com",
   "ignoreTestFiles": [
     "**/*.md",
     "cypress/.prettierrc"

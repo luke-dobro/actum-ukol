@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { name, country, city, creditCard, month, year } from '../globalVariables';
+import { name, country, city, creditCard, month, year } from '../../globalVariables';
 
 describe('Cart tests', () => {
   let productName;

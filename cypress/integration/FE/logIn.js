@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { username, password } from '../globalVariables';
+import { username, password } from '../../globalVariables';
 
 describe('Sign in tests', () => {
   let randomString;

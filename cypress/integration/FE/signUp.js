@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+import { username, password } from '../../globalVariables';
+
 describe('Sign up tests', () => {
   let randomString;
 
@@ -47,6 +49,16 @@ describe('Sign up tests', () => {
     cy.get('#sign-username').type('      ');
 
     cy.get('#sign-password').type('      ');
+
+    cy.get('.btn-primary').contains('Sign up').click();
+
+    // Sign up form is not closed, registration not successful
+    cy.get('.btn-primary').contains('Sign up').should('be.visible');
+
+    // Try to fill in credentials of existing user
+    cy.get('#sign-username').type(username);
+
+    cy.get('#sign-password').type(password);
 
     cy.get('.btn-primary').contains('Sign up').click();
 
