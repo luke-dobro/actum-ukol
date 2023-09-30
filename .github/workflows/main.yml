@@ -10,5 +10,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          start: npx cypress run
+          start: npx cypress run --spec "cypress/integration/BE/**/*.js,cypress/integration/FE/**/*.js"
           record: false  # Do not record videos and screenshots
